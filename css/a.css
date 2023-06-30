@@ -1,162 +1,238 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .section {
-  background-color:#fff;
+  background-color: #fff;
   width: 1300px;
   height: 900px;
   height: 90vh;
 
-  margin:0 auto;
+  margin: 0 auto;
   padding: 5px 10px;
   border-radius: 5px;
-  box-shadow: 0 0 3px 6px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 3px 6px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
 }
-.headers{
+.headers {
+  height: 12%;
 
-    height: 12%;
-  
+  display: flex;
+  align-items: center;
 
-    
-    display: flex;
-    align-items: center;
-
-    border-bottom: 5px solid rgba(0, 0, 0, .1) ;
-
-  
-
-   
-  
-
+  border-bottom: 5px solid rgba(0, 0, 0, 0.1);
 }
-.items{display: flex;justify-content:space-between;
-padding: 0 25px;
-margin-left: 20px;
-gap: 50px;
-align-items: center}
-.items-element{
-text-decoration: none;
-padding: 0 0 5px 0;
-font-size: 18px;
-color: #9BA4B5;
-transition: all .3s;
-overflow: hidden;
-display: inline-block;
-padding: 5px 10px;
-border-radius: 10px;
-border: none;
-outline:2px solid #fff;
-
-
-
-
+.items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-left: 20px;
+  gap: 50px;
+  align-items: center;
 }
-.items-element:hover{
-    color: #49556b;
-    transform: translateY(-3px);
-   
-    
-
-
-    outline:2px solid #F86F03;
-
-
-
+.items-element {
+  text-decoration: none;
+  padding: 0 0 5px 0;
+  font-size: 18px;
+  color: #9ba4b5;
+  transition: all 0.3s;
+  overflow: hidden;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: 2px solid #fff;
 }
-.sneaker{
-    font-size: 32px;
-   
-    
-    
-    color: black;
-    font-weight: 600;
-    font-family: 'Belanosima', sans-serif;
+.items-element:hover {
+  color: #49556b;
+  transform: translateY(-3px);
 
+  outline: 2px solid #f86f03;
 }
-.numbers{
-    display: flex;
-    position: relative;
+.sneaker {
+  font-size: 32px;
 
-    justify-content: end;
-   
-    width: 50%;
-    
-  
-    align-items: center;
-    gap:50px;
-
-   
+  color: black;
+  font-weight: 600;
+  font-family: "Belanosima", sans-serif;
 }
-.avatar{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    outline: 3px solid #fff;;
-    background-color: #fff;
+.numbers {
+  display: flex;
+  position: relative;
 
+  justify-content: end;
+
+  width: 50%;
+
+  align-items: center;
+  gap: 50px;
 }
-.nextt{
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: 3px solid #fff;
+  background-color: #fff;
+}
+.nextt {
+  border: 2px solid #f86f03;
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  position: absolute;
+  top: -11px;
+  right: 75px;
+  background-color: #fff;
+}
 
-    border: 2px solid #F86F03;
-    border-radius: 100%;
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    text-align: center;
-    position: absolute;
-    top: -11px;
-    right: 75px;
-    background-color: #fff
-};
-    
-    
-    
-  
-   
+/*main-------part*/
 
+.pic-container {
+  display: flex;
 
+  width: 50%;
 
-  Collections
-  Men
-  Women
-  About
-  Contact
-  Sneaker
-  Company
-  Fall
-  Limited
-  Edition
-  Sneakers
-  These
-  low-profile
-  sneakers
-  are
-  your
-  perfect
-  casual
-  wear
-  companion.
-  Featuring
-  a
-  durable
-  rubber
-  outer
-  sole,
-they’ll
-  withstand
-  everything
-  the
-  weather
-  can
-  offer.
-  $125.00
-  50%
-  $250.00
-  0
-  Add
-  to
-  cart;
+  flex-direction: column;
+  padding: 10px;
+  gap: 25px;
+}
+
+.main-pic {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+.main-pic-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.a {
+  width: 100%;
+  display: flex;
+}
+
+.other-pics {
+  display: flex;
+  gap: 20px;
+
+  justify-content: center;
+
+  margin: 0 auto;
+}
+.other-pics div {
+  width: 12%;
+  margin-top: 8px;
+}
+
+.other-pics div img {
+  width: 100%;
+  border: 0 solid white;
+  border-radius: 10px;
+}
+
+.other-pics div img:hover {
+  border: 5px solid #ddd;
+  transform: scale(1.2);
+}
+.description {
+  width: 50%;
+
+  margin-top: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  padding: 5px 10px;
+}
+
+.sneaker {
+  color: #f86f03;
+  font-size: 18px;
+  text-align: center;
+}
+.des {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.des-2 {
+  color: #8bacbe;
+  text-align: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.price-tag {
+  font-size: 42px;
+  font-weight: 600;
+}
+.off {
+  background-color: #fee2cd;
+  color: #f86f03;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.a {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  gap: 15px;
+  background-color: #dbdfea;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 30px;
+}
+.minus {
+  display: inline-block;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dbdfea;
+  color: #f86f03;
+  font-size: 25px;
+  cursor: pointer;
+}
+.plus {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dbdfea;
+  color: #f86f03;
+  font-size: 25px;
+}
+.add-cart {
+  display: inline-block;
+
+  outline: none;
+  padding: 10px 90px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  transition: all 0.5s;
+}
+.add-cart:hover {
+  background-color: #f86f03;
+  color: #fff;
+}
+.minus:hover,
+.plus:hover {
+  background-color: #f86f03;
+  color: black;
+}
