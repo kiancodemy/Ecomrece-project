@@ -130,15 +130,23 @@
   margin-top: 8px;
 }
 
-.other-pics div img {
+.image-elemnt {
   width: 100%;
   border: 0 solid white;
   border-radius: 10px;
 }
 
-.other-pics div img:hover {
+.image-elemnt:hover {
   border: 5px solid #ddd;
   transform: scale(1.2);
+}
+
+.image-elemnt:active {
+  border: 5px solid #f86f03;
+}
+
+.id {
+  border: 5px solid #f86f03;
 }
 .description {
   width: 50%;
@@ -235,4 +243,40 @@
 .plus:hover {
   background-color: #f86f03;
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .headers {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .a {
+    flex-direction: column;
+  }
+  .price-tag {
+    font-size: 32px;
+  }
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headers {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .a {
+    flex-direction: column;
+  }
+  .price-tag {
+    font-size: 28px;
+  }
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
 }
