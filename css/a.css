@@ -185,9 +185,9 @@
   align-items: center;
   gap: 20px;
 }
-.price-tag {
+.price_tag {
   font-size: 42px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .off {
   background-color: #fee2cd;
@@ -231,7 +231,7 @@
   color: #f86f03;
   font-size: 25px;
 }
-.add-cart {
+.add_cart {
   display: inline-block;
 
   outline: none;
@@ -240,7 +240,7 @@
   background-color: gainsboro;
   transition: all 0.5s;
 }
-.add-cart:hover {
+.add_cart:hover {
   background-color: #f86f03;
   color: #fff;
 }
@@ -302,7 +302,7 @@
   width: 30px;
   height: 30px;
   font-size: 18px;
-  transition: all 1s;
+  transition: background-color 0.8s;
 }
 .delete:hover,
 .slider-btn:hover {
@@ -356,6 +356,7 @@
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 600px) {
   .a {
     flex-direction: column;
