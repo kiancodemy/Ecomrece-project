@@ -4,13 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 .body {
   position: relative;
 }
 .section {
   background-color: #fff;
-  width: 1300px;
-  height: 900px;
+  max-width: 1300px;
+  max-height: 800px;
   height: 90vh;
 
   margin: 0 auto;
@@ -68,7 +73,7 @@
 
   justify-content: end;
 
-  width: 50%;
+  max-width: 50%;
 
   align-items: center;
   gap: 50px;
@@ -98,7 +103,7 @@
 .pic-container {
   display: flex;
 
-  width: 50%;
+  max-width: 50%;
 
   flex-direction: column;
   padding: 10px;
@@ -108,9 +113,10 @@
 .main-pic {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  gap: 5px;
+  max-width: 50%;
 
-  margin: auto;
+  margin: 0 auto;
 }
 .main-pic-img {
   width: 100%;
@@ -249,6 +255,7 @@
   background-color: #f86f03;
   color: black;
 }
+/*slide ///////////*/
 
 .slider {
   position: relative;
@@ -309,8 +316,67 @@
   background-color: black;
   color: #fff;
 }
-
 @media screen and (max-width: 900px) {
+  .a {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .des {
+    font-size: 35px;
+  }
+  .des-2 {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .sneaker {
+    font-size: 28px;
+  }
+  .headers .items {
+    visibility: hidden;
+    display: none;
+  }
+  .headers {
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider {
+    max-width: 300px;
+    max-width: 300px;
+  }
+  .section {
+    box-shadow: none;
+  }
+  .add_cart {
+    padding: 10px 20px;
+  }
+}
+/*@media screen and (max-width: 1200px) {
+  .a {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price {f
+    flex-direction: column;
+  }
+
+  .des-2 {
+    padding: 5px;
+  }
+  .description {
+    gap: 20px;
+  }
+}
+
+/*@media screen and (max-width: 900px) {
   .headers {
     gap: 1px;
   }
@@ -344,7 +410,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (min-width: 1500px) {
   .a {
     flex-direction: column;
   }
@@ -358,11 +424,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .des {
+    font-size: 28px;
+  }
   .a {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
   }
   .price-tag {
@@ -388,8 +457,4 @@
   .add-cart {
     padding: 10px 30px;
   }
-}
-
-.hidden {
-  visibility: hidden;
-}
+}*/

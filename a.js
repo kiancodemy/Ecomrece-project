@@ -11,19 +11,21 @@ const plus = document.querySelector(".plus");
 const add_cart = document.querySelector(".add_cart ");
 const price_tag = document.querySelector(".price_tag ");
 const nextt = document.querySelector(".nextt ");
+const number_main = document.querySelector(".number_main ");
 let b = 0;
 let finalcost = 0;
 plus.addEventListener("click", function () {
   b++;
   finalcost = `${125 * b}$ `;
   price_tag.textContent = finalcost;
+  number_main.textContent = b;
 });
 minus.addEventListener("click", function () {
   if (b > 0) {
     b--;
     finalcost = `${125 * b}$ `;
     price_tag.textContent = finalcost;
-  } else {
+    number_main.textContent = b;
     return;
   }
 });
